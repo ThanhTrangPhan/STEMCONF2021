@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src:url('Montserrat-SemiBold.woff') format('woff'),
+        url('Montserrat-SemiBold.woff2') format('woff2'),
+        url('Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg'),
+        url('Montserrat-SemiBold.eot'),
+        url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-SemiBold.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'TUV-Montserrat-Regular';
+    src:url('TUV-Montserrat-Regular.woff') format('woff'),
+        url('TUV-Montserrat-Regular.woff2') format('woff2'),
+        url('TUV-Montserrat-Regular.svg#TUV-Montserrat-Regular') format('svg'),
+        url('TUV-Montserrat-Regular.eot'),
+        url('TUV-Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TUV-Montserrat-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'bpimperialregular';
+    src:url('bpimperialregular.woff') format('woff'),
+        url('bpimperialregular.woff2') format('woff2'),
+        url('bpimperialregular.eot'),
+        url('bpimperialregular.eot?#iefix') format('embedded-opentype'),
+        url('bpimperialregular.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
