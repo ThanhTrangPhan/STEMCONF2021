@@ -178,7 +178,7 @@ p,ul{
 }
 
 .navbar-default .navbar-nav > li > a : hover{
-  color:#FFDF2B;
+  color:#FFDF2B !important;
 }
 
 .number{
@@ -271,3 +271,15 @@ p,ul{
   height: 32px;
 
 }
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+}
+ 
