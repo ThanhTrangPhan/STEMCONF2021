@@ -1,3 +1,4 @@
+
 a:link,a:visited{
   text-decoration: none;
   color:white;
@@ -30,12 +31,25 @@ h3{
     text-align: center;
     
 }
-p,ul{
+ul{
     color:white;
     font-family: 'TUV-Montserrat-Regular';
     font-size:16px;
-    padding: 20px 95px ;
+    padding: 0px 95px ;
     text-align: justify;
+}
+p{
+  color:white;
+  font-family: 'TUV-Montserrat-Regular';
+  font-size:16px;
+  padding: 20px 95px ;
+  text-align: justify;
+}
+label{
+  font-family: 'TUV-Montserrat-Regular'!important;
+  color:white !important;
+  font-size:16px !important;
+  padding: 0px;
 }
 
 .bg-white{
@@ -79,6 +93,7 @@ p,ul{
   padding-right: 2px;
   text-align: left;
 }
+
 .glyphicon-calendar{
   color:#DC3C4D;
 }
@@ -158,19 +173,23 @@ p,ul{
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.jumbotron{
-    background-color: #2A0A5E;
-}
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
   color: #FFDF2B;
   background-color: transparent;
 }
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:focus, 
+.nav-pills>li.active>a:hover {
+    color: #fff !important;
+    background-color: #DC3C4D !important;
 
+}
 .nav,.navbar-default{
   color: white;
   background-color: #2A0A5E;
   border-color: #2A0A5E;
+  opacity: 0.9;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -222,7 +241,6 @@ p,ul{
 }
 
 #ticket,#speakers{
-  background-image: url("bg-im.png");
   background-repeat: none;
   background-size:cover;
   background-color:#2A0A5E;
@@ -233,7 +251,13 @@ p,ul{
     border-color: #DC3C4D;
     border-top-style: dotted; 
 }
-
+#change_info{
+  background-color: #2A0A5E;
+  color: white;
+  font-size:20px;
+  border-width:thick;
+  border-color: #DC3C4D;
+}
 #myVideo {
     right: 0;
     bottom: 0;
@@ -271,6 +295,17 @@ p,ul{
   height: 32px;
 
 }
+#pills a:hover{
+  background-color: transparent !important;
+  color: #DC3C4D;
+  
+}
+#select_theme,#timeOn,#subject {
+  font-family:'TUV-Montserrat-Regular';
+  width: 350px !important;
+  height: 30px !important;
+  border-radius: 9%;
+}
 
 @media screen and (max-width: 768px) {
     .col-sm-4 {
@@ -282,4 +317,46 @@ p,ul{
       margin-bottom: 35px;
     }
 }
- 
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #DC3C4D;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: transparent;
+  color:#FFDF2B;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #DC3C4D;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #DC3C4D;
+  border-top: none;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #2A0A5E; !important;
+    cursor: pointer;
+}

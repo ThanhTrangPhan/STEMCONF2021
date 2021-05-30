@@ -1,18 +1,23 @@
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>STEMCONF 2021</title>
+	<link rel="shortcut icon" href="media/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script> 
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/active_nav_li.js"></script> 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!-- navbar: -->
 	<nav class="navbar navbar-default navbar-fixed-top" id="mynavbar">
 		<div class="container">
 		    <div class="navbar-header">
@@ -21,7 +26,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>                        
 		      </button>
-		      <a class="navbar-brand" href="#about1"><span class="conf">stemconf 2021</span> </a>
+		      <a class="navbar-brand" href="main.php"><span class="conf">stemconf 2021</span> </a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav navbar-right">
@@ -29,15 +34,14 @@
 		        <li><a class="nav-item" href="#speakers">Diễn giả</a></li>
 		        <li><a class="nav-item" href="#schedule">Lịch chương trình</a></li>
 		        <li><a class="nav-item" href="#ticket">Vé tham dự</a></li>
-		        <li><a class="nav-item" href="#contact">Liên hệ</a></li>
+		        <li><a class="nav-item" href="login.php">Đăng nhập</a></li>
 		      </ul>
 		    </div>
 		</div>
 	</nav>
-	<div class="container-fluid">
-		<div class="jumbotron">
-			<video autoplay muted loop id="myVideo"><source src="media/stem2021.mp4" type="video/mp4"></video>		
-		</div>
+	<div class="container" style="padding: 20px;">
+		<video autoplay muted loop id="myVideo"><source src="media/stem2021.mp4" type="video/mp4"></video>		
+
 	</div>
 	
 	<div class="container-fluid" id="about1">
@@ -72,8 +76,8 @@
 				</ul> 
 			    </p>
 			</div>
-		    <div class="col-sm-5" id="logo">
-			    <img src="media/stem.png" style="width: 100%; height: auto;">
+		    <div class="col-sm-5">
+			    <img src="media/singularit.png" style="width: 100%; height: auto;padding-top: 120px;">
 		    </div>
 	    </div>
 	</div>
@@ -316,7 +320,7 @@
 	        </div>
 	        <div class="panel-footer ">
 	          <h3 style="color:#DC3C4D;">500.000 VNĐ</h3>
-	          <button class="btn btn-lg btn-danger hover" style="padding: 10px 120px;margin:5% 5%;">Đăng kí</button>
+	          <a href="login.php" class="btn btn-lg btn-danger hover" style="padding: 10px 120px;margin:5% 5%;" >Đăng kí</a>
 	        </div>
 	      </div>
 	    </div>
@@ -333,11 +337,83 @@
 	        </div>
 	        <div class="panel-footer">
 	          <h3 style="color:#DC3C4D;">300.000 VNĐ</h3>
-	          <button class="btn btn-lg btn-danger hover" style="padding: 10px 120px; margin: 5% 5%;">Đăng kí</button>
+	          <a href="login.php" class="btn btn-lg btn-danger hover" style="padding: 10px 120px; margin: 5% 5%;">Đăng kí</a>
 	        </div>
 	      </div>
 	    </div>
 	  </div>
+	</div>
+
+	<div class="container-fluid " id="sponsor">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding:30px 10px";>
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+				  <div class="row">
+				  	<div class="col-sm-3">
+				  		<h1>Nhà tài trợ vàng</h1>
+				  	</div>
+				  	<div class="col-sm-9" style="padding-top: 30px ;">
+				  		<div class="col-sm-6" >
+				  			<img src="media/1200px-Vietnam_Television_logo_from_2013.svg.png" alt="vtv" style="width: 250px;height: 130px;">
+				  		</div>
+				  		<div class="col-sm-6">
+				  			<img src="media/agiletech_logo.png" alt="agiletech" style="max-width: 70%;height: auto;">
+				  		</div>
+				  	</div>
+				  </div>
+				  
+				</div>
+
+				<div class="item">
+					<div class="row">
+					  	<div class="col-sm-3">
+					  		<h1 >Nhà tài trợ bạc</h1>
+					  	</div>
+					  	<div class="col-sm-9" style="padding-top: 20px;">
+					  		<div class="col-sm-6" >
+					  			<img src="media/aquafina-logo-E0D2322028-seeklogo.com.png" alt="aquafina" style="width:250px;height:130px;">
+					  		</div>
+					  		<div class="col-sm-6">
+					  			<img src="media/glint.png" alt="glint" style="width: 139px;height: 139px;">
+					  		</div>
+					  	</div>
+				  </div>
+				</div>
+				<div class="item">
+					<div class="row">
+					  	<div class="col-sm-3">
+					  		<h1 >Nhà tài trợ đồng</h1>
+					  	</div>
+					  	<div class="col-sm-9" style="padding-top: 10px;">
+					  		<div class="col-sm-6" >
+					  			<img src="media/coca-cola-brand-identity-example.png" alt="cocacola" style="width: 100px;height:  100px;">
+					  		</div>
+					  		<div class="col-sm-6">
+					  			<img src="media/BIDV_Logo.png" alt="bidv" style="max-width: 70%;height: auto;">
+					  		</div>
+					  	</div>
+				  </div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 	</div>
 
 	<footer class="container-fluid" id="contact" style="padding-bottom: 20px; margin-bottom: 10px;">
@@ -366,7 +442,7 @@
       			<form class="form-horizontal" action="/action_page.php">
 				    <div class="form-group">   
 				      <div class="col-sm-10">
-				        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				        <input type="email" class="form-control" id="email" placeholder="Nhập email ..." name="email">
 				      </div>
 				    </div>
 				   
